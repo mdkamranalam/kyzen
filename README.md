@@ -1,201 +1,36 @@
-# 🚀 Kyzen
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-> **Build together. Ship faster.**
+## Getting Started
 
-Kyzen is an AI-powered developer collaboration platform designed to help teams plan, build, review, and ship software efficiently. It combines modern project management, real-time collaboration, and AI-assisted development into a single, intuitive workspace.
-
----
-
-## ✨ Features
-
-### 👥 Team Collaboration
-
-* Organizations and workspaces
-* Member invitations
-* Role-based access control (RBAC)
-* Team management
-
-### 📂 Project Management
-
-* Create and manage projects
-* Kanban boards
-* Tasks and issues
-* Labels, priorities, and milestones
-* Sprint planning
-
-### 🤖 AI-Powered Development
-
-* AI code review
-* AI bug detection
-* AI documentation generation
-* AI task breakdown
-* AI-powered developer assistant
-
-### 📚 Knowledge Management
-
-* Wiki and documentation
-* Markdown editor
-* Version history
-
-### 📊 Analytics
-
-* Team productivity insights
-* Sprint analytics
-* Issue trends
-* Performance dashboard
-
-### 🔔 Notifications
-
-* Real-time notifications
-* Mentions
-* Activity feed
-* Email notifications
-
-### 🔒 Security
-
-* Secure authentication
-* Protected routes
-* Session management
-* Organization-based permissions
-
----
-
-# ⚙️ Getting Started
-
-## Prerequisites
-
-* Node.js 22+
-* npm, pnpm, or yarn
-* PostgreSQL
-* Git
-
-## Installation
-
-```bash
-git clone https://github.com/mdkamranalam/kyzen.git
-
-cd kyzen
-
-npm install
-```
-
-Create a `.env.local` file:
-
-```env
-DATABASE_URL=
-
-AUTH_SECRET=
-
-AUTH_GITHUB_ID=
-AUTH_GITHUB_SECRET=
-
-AUTH_GOOGLE_ID=
-AUTH_GOOGLE_SECRET=
-
-OPENAI_API_KEY=
-
-UPLOADTHING_TOKEN=
-
-RESEND_API_KEY=
-
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
-```
-
-Run database migrations:
-
-```bash
-npx prisma migrate dev
-```
-
-Start the development server:
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Open:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
-http://localhost:3000
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-# 🧪 Development
+## Learn More
 
-Run the development server:
+To learn more about Next.js, take a look at the following resources:
 
-```bash
-npm run dev
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Build for production:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-```bash
-npm run build
-```
+## Deploy on Vercel
 
-Start the production server:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-```bash
-npm start
-```
-
-Run linting:
-
-```bash
-npm run lint
-```
-
-Format the project:
-
-```bash
-npm run format
-```
-
----
-
-# 🎯 Project Goals
-
-Kyzen aims to:
-
-* Improve developer productivity
-* Simplify project management
-* Enhance team collaboration
-* Reduce repetitive engineering work with AI
-* Provide a modern developer experience
-
----
-
-# 🤝 Contributing
-
-Contributions, feature requests, and bug reports are welcome.
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push the branch
-5. Open a Pull Request
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-# 👨‍💻 Author
-
-**Md. Kamran Alam**
-
-* Software Engineer
-* AI Enthusiast
-* Entrepreneur
-
----
-
-## ⭐ Support
-
-If you find this project useful, consider giving it a **⭐** on GitHub.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
