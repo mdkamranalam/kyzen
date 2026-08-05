@@ -14,11 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kyzen.dev"),
   title: {
     default: "Kyzen",
     template: "%s | Kyzen",
   },
-  description: "Build together. Ship faster.",
+  description:
+    "Build together. Ship faster. AI-powered developer collaboration platform.",
 };
 
 export default function RootLayout({
