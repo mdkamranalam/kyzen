@@ -35,15 +35,14 @@ export default async function HomePage() {
           <form
             action={async () => {
               "use server";
-              // This automatically redirects the user to the GitHub login page
-              await signIn("github");
+              await signIn("credentials", { redirectTo: "/" });
             }}
           >
             <button
               type="submit"
               className="rounded bg-black px-4 py-2 text-white transition hover:bg-gray-800"
             >
-              Sign in with GitHub
+              Sign in as Developer
             </button>
           </form>
         </div>
