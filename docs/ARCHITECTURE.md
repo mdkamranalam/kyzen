@@ -14,7 +14,18 @@ The project is built on Next.js and follows a modular structure:
 
 - UI components request data through `lib/` or server actions.
 - API routes and server-side logic are handled by Next.js route handlers.
-- Shared state may be managed through React context, hooks, or external stores depending on project conventions.
+- Shared state may be managed through React context, hooks, or external stores (like Zustand).
+
+## Database & ORM
+
+- **Database:** PostgreSQL.
+- **ORM:** Prisma is used for schema management and type-safe database queries.
+- **Location:** The database schema is defined in `prisma/schema.prisma` and the initialized Prisma client is exported from `lib/prisma.ts`.
+
+## Authentication
+
+- **Provider:** Auth.js (NextAuth v5).
+- **Strategy:** We are using database-backed sessions with the Prisma Adapter. The necessary models (`User`, `Account`, `Session`) are defined in the Prisma schema.
 
 ## Agent system
 
