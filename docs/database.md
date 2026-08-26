@@ -31,3 +31,19 @@ The `Session` model is used to manage active user sessions.
 ## Prisma Client
 
 We instantiate a singleton Prisma Client in `lib/prisma.ts`. This prevents Next.js from establishing multiple database connections during hot-reloads in development.
+
+## Business Logic Models
+
+### Organization
+The `Organization` model represents a collaborative workspace container (e.g., a company or a team).
+- `id`: Unique identifier (CUID).
+- `name`: Display name of the organization.
+- `slug`: Unique URL-friendly slug.
+- `logo`: Optional URL to the organization's logo.
+
+### OrganizationMember
+The `OrganizationMember` model is a join table connecting a `User` to an `Organization` with a specific role.
+- `role`: Enum (`OWNER`, `ADMIN`, `MEMBER`).
+- `userId`: Foreign key linking to the `User`.
+- `organizationId`: Foreign key linking to the `Organization`.
+- Features a composite unique constraint on `[userId, organizationId]` to prevent duplicate memberships.

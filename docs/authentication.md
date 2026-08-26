@@ -12,6 +12,11 @@ Based on our environment configuration, we plan to support:
 - **GitHub OAuth**
 - **Google OAuth**
 
+### Developer Login (Local Development)
+To bypass the OAuth setup during early development, we have implemented a **Developer Login** using NextAuth's `Credentials` provider. 
+- A one-click login creates/fetches a dummy user (`dev@kyzen.local`).
+- It uses a **JWT strategy** (JSON Web Token) instead of database sessions purely for this development bypass.
+
 ## Integration Flow
 
 1. **Sign In**: User clicks "Sign in with GitHub".
