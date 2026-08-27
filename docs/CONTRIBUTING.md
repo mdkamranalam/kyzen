@@ -1,29 +1,38 @@
-# Contributing
+# Contributing to Kyzen
 
-## Workflow
+Thank you for your interest in contributing to **Kyzen**! We welcome contributions from developers of all skill levels.
 
-- Create feature branches from `main`
-- Use descriptive branch names: `feature/<feature-name>`, `fix/<issue>`
-- Open pull requests with clear summaries and testing notes
+---
 
-## Code quality
+## Code of Conduct
+We are committed to providing an open, welcoming, and harassment-free environment for everyone. Please be respectful, constructive, and empathetic in all interactions.
 
-- Keep components small and reusable
-- Follow established naming and folder conventions
-- Update documentation when adding or changing features
+---
 
-## Documentation
+## How Can I Contribute?
 
-- Public docs go in `docs/`
-- Private notes and experiment logs go in `dev_docs/` only
-- Add new architecture or setup notes to `docs/architecture.md` and `docs/README.md`
+1. **Reporting Bugs:** Check existing issues before opening a new one. Include clear reproduction steps, environment details, and screenshots if applicable.
+2. **Suggesting Enhancements:** Open a feature request issue detailing the motivation, proposed solution, and alternative considerations.
+3. **Submitting Pull Requests:**
+   - Fork the repository and create your branch from `main`.
+   - Ensure all existing tests and linting pass (`npm run lint` & `npm run build`).
+   - Keep pull requests focused on a single feature or bugfix.
+   - Reference the issue number in the PR description (e.g., `Closes #42`).
 
-## Commit messages
+---
 
-- Use concise, imperative style
-- Example: `feat: add user profile sidebar`
+## Commit Message Guidelines
+We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+- `feat:` A new feature
+- `fix:` A bug fix
+- `docs:` Documentation only changes
+- `style:` Changes that do not affect the meaning of the code (white-space, formatting)
+- `refactor:` A code change that neither fixes a bug nor adds a feature
+- `perf:` A code change that improves performance
+- `test:` Adding missing tests or correcting existing tests
+- `chore:` Changes to the build process or auxiliary tools
 
-## Tests
+---
 
-- Run unit and integration tests before submitting PRs
-- Document how to run tests in `docs/README.md` if not already present
+## License
+By contributing to Kyzen, you agree that your contributions will be licensed under the [MIT License](./LICENSE).
